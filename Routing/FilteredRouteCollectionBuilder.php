@@ -38,7 +38,7 @@ final class FilteredRouteCollectionBuilder
             $options = $normalizedOptions;
         }
 
-        $this->options = $resolver->resolve($options);
+        $this->options = $options;
     }
 
     public function filter(RouteCollection $routes): RouteCollection
